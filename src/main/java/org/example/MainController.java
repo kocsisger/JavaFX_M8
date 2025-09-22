@@ -12,6 +12,10 @@ public class MainController {
     @FXML
     void handleClick() {
         System.out.println("Hello season!!!");
+        if (seasonLabel.getText().equals("Summer"))
+            seasonLabel.setText("Autumn");
+        else
+            seasonLabel.setText("Summer");
     }
 
     @FXML
