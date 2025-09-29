@@ -9,18 +9,18 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainController">
    <children>
-      <TabPane prefHeight="480.0" prefWidth="640.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <TabPane layoutY="14.0" prefHeight="480.0" prefWidth="640.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
-          <Tab text="DummyDemo">
+          <Tab text="Dummy Demo">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="256.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleClick" text="Change">
+                        <Button layoutX="256.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleClick" text="Change">
                            <font>
                               <Font size="27.0" />
                            </font>
                         </Button>
-                        <Label fx:id="seasonLabel" layoutX="259.0" layoutY="263.0" text="Summer">
+                        <Label fx:id="seasonLabel" layoutX="259.0" layoutY="226.0" text="Summer">
                            <font>
                               <Font size="33.0" />
                            </font>
@@ -29,7 +29,7 @@
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab text="Load Demo">
+          <Tab text="Load demo">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
