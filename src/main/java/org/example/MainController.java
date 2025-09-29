@@ -29,6 +29,12 @@ public class MainController {
     }
 
     @FXML
+    void changeData() {
+        model.getStudent().setName("Tom Smith");
+        loadData();
+    }
+
+    @FXML
     private Label seasonLabel;
 
     @FXML

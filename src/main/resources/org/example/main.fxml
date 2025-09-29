@@ -83,6 +83,11 @@
                                     <Font size="20.0" />
                                  </font>
                               </Label>
+                              <Button mnemonicParsing="false" onAction="#changeData" text="Change" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
                            </children>
                         </GridPane>
                      </children></AnchorPane>
