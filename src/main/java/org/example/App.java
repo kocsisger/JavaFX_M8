@@ -16,7 +16,7 @@ public class App extends Application {
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 
         stage.setScene(scene);
-        stage.setTitle("Test the new title");
+        stage.setTitle("Student register");
         //here is a comment
         stage.show();
     }
