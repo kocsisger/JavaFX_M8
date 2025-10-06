@@ -26,12 +26,13 @@ public class MainController {
         nameLabel.setText(model.getStudent().getName());
         creditsLabel.setText("" + model.getStudent().getCredits());
         dateOfBirthLabel.setText(model.getStudent().getDateOfBirth().toString());
+
     }
 
     @FXML
     void changeData() {
         model.getStudent().setName("Tom Smith");
-        loadData();
+        nameLabel.setText(model.getStudent().getName());
     }
 
     @FXML

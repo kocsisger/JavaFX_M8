@@ -1,16 +1,19 @@
 package org.example.model;
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 import java.time.LocalDate;
 
 public class Student {
-    private String name;
+    private StringProperty name = new SimpleStringProperty();
     private int credits;
     private LocalDate dateOfBirth;
 
     public Student( String name, int credits, LocalDate dateOfBirth) {
         this.credits = credits;
         this.dateOfBirth = dateOfBirth;
-        this.name = name;
+        this.name.setValue(name);
     }
 
     @Override
@@ -39,10 +42,14 @@ public class Student {
     }
 
     public String getName() {
-        return name;
+        return name.getValue();
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name.setValue(name);
+    }
+
+    public StringProperty nameProperty() {
+        return name;
     }
 }
