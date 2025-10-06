@@ -23,7 +23,10 @@ public class MainController {
 
     @FXML
     void loadData() {
-        nameLabel.setText(model.getStudent().getName());
+        //nameLabel.setText(model.getStudent().getName());
+        //Connects the observer to the observable
+        nameLabel.textProperty().bind(model.getStudent().nameProperty());
+
         creditsLabel.setText("" + model.getStudent().getCredits());
         dateOfBirthLabel.setText(model.getStudent().getDateOfBirth().toString());
 
@@ -32,7 +35,8 @@ public class MainController {
     @FXML
     void changeData() {
         model.getStudent().setName("Tom Smith");
-        nameLabel.setText(model.getStudent().getName());
+        //Not needed since namelabel observes the Student's name
+      //  nameLabel.setText(model.getStudent().getName());
     }
 
     @FXML
